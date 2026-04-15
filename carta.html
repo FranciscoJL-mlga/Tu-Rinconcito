@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carta — Tu Rinconcito</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+   <link rel="icon" href="./iconoCafe.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">Tu Rinconcito</a>
+  <ul class="nav-links">
+    <li><a href="index.html#nosotros">Nosotros</a></li>
+    <li><a href="carta.html" class="active">Carta</a></li>
+    <li><a href="index.html#libros">Librería</a></li>
+    <li><a href="index.html#eventos">Eventos</a></li>
+    <li><a href="index.html#contacto" class="nav-cta">Reservar</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="reveal">
+    <p class="page-hero-eyebrow">Cafetería · Málaga</p>
+    <h1 class="page-hero-title">Nuestra<br><em>carta</em></h1>
+  </div>
+  <div class="page-hero-right reveal">
+    <p class="page-hero-desc">Café de especialidad de origen único, repostería casera y una selección de platos sencillos para acompañar tus horas de lectura.</p>
+    <span class="hours-badge">
+      <span class="hours-dot"></span>
+      Abierto hoy · 9:00 – 21:00
+    </span>
+  </div>
+</div>
+
+<!-- FILTER -->
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">Todo</button>
+  <button class="filter-btn" data-filter="cafe">Cafés</button>
+  <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+  <button class="filter-btn" data-filter="desayunos">Desayunos</button>
+  <button class="filter-btn" data-filter="tartas">Tartas & dulces</button>
+  <button class="filter-btn" data-filter="salado">Salado</button>
+</div>
+
+<!-- ══ CAFÉS DE ESPECIALIDAD ══ -->
+<section class="menu-section" data-section="cafe">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-eyebrow">Cafés</p>
+      <h2 class="section-title">Especialidad <em>& origen</em></h2>
+    </div>
+    <p class="section-note">Trabajamos con tostadores independientes. Origen rotativo cada temporada.</p>
+  </div>
+  <div class="cards-grid">
+    <div class="menu-card reveal">
+      <div class="menu-card-img-wrap">
+        <img class="menu-card-img" src="https://www.lavazzausa.com/es/recipes-and-coffee-hacks/como-hacer-cafe-flat-white/_jcr_content/root/cust/customcontainer/image.coreimg.jpeg/1747815664322/d-m-how-to-slot-1-large%402.jpeg" alt="Flat White" />
+      </div>
+      <div class="menu-card-body">
+        <span class="menu-card-tag">Espresso</span>
+        <h3 class="menu-card-name">Flat White</h3>
+        <p class="menu-card-desc">Doble ristretto con microespuma sedosa. Origen Etiopía Yirgacheffe, notas de melocotón y jazmín.</p>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">3,80 €</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-card reveal">
+      <div class="menu-card-img-wrap">
+        <img class="menu-card-img" src="https://perfectdailygrind.com/es/wp-content/uploads/sites/2/2020/03/Cortadito-1.png" alt="Cortado" />
+      </div>
+      <div class="menu-card-body">
+        <span class="menu-card-tag">Espresso</span>
+        <h3 class="menu-card-name">Cortado</h3>
+        <p class="menu-card-desc">Espresso doble cortado con leche vaporizada. Equilibrio perfecto entre intensidad y suavidad.</p>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">2,80 €</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-card reveal">
+      <span class="badge-new">Nuevo</span>
+      <div class="menu-card-img-wrap">
+        <img class="menu-card-img" src="https://lifesimplified.gorenje.com/wp-content/uploads/2024/06/gorenje-blog-refreshing_cold_brew_coffee.jpg" alt="Cold Brew" />
+      </div>
+      <div class="menu-card-body">
+        <span class="menu-card-tag">Frío</span>
+        <h3 class="menu-card-name">Cold Brew</h3>
+        <p class="menu-card-desc">Maceración en frío durante 18h. Cuerpo intenso y baja acidez. Servido sobre hielo con naranja.</p>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">4,50 €</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- lista de cafés adicionales -->
+  <div class="items-list reveal" style="margin-top: 2.5rem; max-width: 700px;">
+    <div class="list-item">
+      <div>
+        <div class="list-item-name">Espresso solo</div>
+        <div class="list-item-desc">Origen Colombia Huila · notas de caramelo y almendra</div>
+      </div>
+      <span class="list-item-price">1,80 €</span>
+    </div>
+    <div class="list-item">
+      <div>
+        <div class="list-item-name">Cappuccino</div>
+        <div class="list-item-desc">Espresso + leche vaporizada con espuma densa · 180 ml</div>
+      </div>
+      <span class="list-item-price">3,20 €</span>
+    </div>
+    <div class="list-item">
+      <div>
+        <div class="list-item-name">Café con leche</div>
+        <div class="list-item-desc">Espresso doble · leche de vaca, avena, soja o almendra</div>
+      </div>
+      <span class="list-item-price">2,80 €</span>
+    </div>
+    <div class="list-item">
+      <div>
+        <div class="list-item-name">Filtro del día</div>
+        <div class="list-item-desc">Método Chemex o V60 · origen y nota en pizarra</div>
+      </div>
+      <span class="list-item-price">3,50 €</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ BEBIDAS ══ -->
+<section class="menu-section" data-section="bebidas">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-eyebrow">Bebidas</p>
+      <h2 class="section-title">Más allá <em>del café</em></h2>
+    </div>
+    <p class="section-note">Tés de hoja suelta, infusiones y alternativas para todos los gustos.</p>
+  </div>
+  <div class="split-layout">
+    <div>
+      <div class="items-list reveal">
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Matcha latte</div>
+            <div class="list-item-desc">Matcha ceremonial japonés · leche de avena · vainilla</div>
+          </div>
+          <span class="list-item-price">4,20 €</span>
+        </div>
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Chai latte</div>
+            <div class="list-item-desc">Mezcla de especias artesanal · cardamomo, canela, jengibre</div>
+          </div>
+          <span class="list-item-price">3,80 €</span>
+        </div>
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Té negro Assam</div>
+            <div class="list-item-desc">Hoja suelta · infusión 4 min · servido en tetera individual</div>
+          </div>
+          <span class="list-item-price">3,20 €</span>
+        </div>
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Té verde Sencha</div>
+            <div class="list-item-desc">Origen Japón · notas herbáceas frescas · 70°C</div>
+          </div>
+          <span class="list-item-price">3,20 €</span>
+        </div>
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Infusión de manzanilla</div>
+            <div class="list-item-desc">Flor entera de cultivo ecológico · con miel de azahar</div>
+          </div>
+          <span class="list-item-price">2,80 €</span>
+        </div>
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Limonada de jengibre</div>
+            <div class="list-item-desc">Limón exprimido · jengibre fresco · sirope de agave</div>
+          </div>
+          <span class="list-item-price">3,50 €</span>
+        </div>
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Agua mineral</div>
+            <div class="list-item-desc">Con o sin gas · 33 cl</div>
+          </div>
+          <span class="list-item-price">1,60 €</span>
+        </div>
+      </div>
+    </div>
+    <img class="split-image reveal" src="https://s3.amazonaws.com/static.realcaliforniamilk.com/media/recipes_4/iced-pistachio-matcha-latte-cream-cheese-foam.jpg" alt="Matcha latte" />
+  </div>
+</section>
+
+<!-- ══ DESAYUNOS ══ -->
+<section class="menu-section" data-section="desayunos">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-eyebrow">Desayunos · 9:00–12:30</p>
+      <h2 class="section-title">Buenos días, <em>lector</em></h2>
+    </div>
+    <p class="section-note">Disponible hasta las 12:30. El mejor comienzo para una mañana de lectura.</p>
+  </div>
+  <div class="cards-grid">
+    <div class="menu-card reveal">
+      <div class="menu-card-img-wrap">
+        <img class="menu-card-img" src="https://www.goodnes.com/sites/g/files/jgfbjl321/files/styles/facebook_share/public/recipe-thumbnail/170713-5d8c7f65e71ad2d5abd1ada19104c5ce_huevo-duro-con-tostadas.jpg?itok=AbTM2TSh" alt="Tostada aguacate" />
+      </div>
+      <div class="menu-card-body">
+        <span class="menu-card-tag">Salado</span>
+        <h3 class="menu-card-name">Tostada de aguacate</h3>
+        <p class="menu-card-desc">Pan de masa madre, aguacate, tomate cherry, semillas de sésamo y AOVE. Con o sin huevo.</p>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">7,50 €</span>
+          <span class="badge-vegan">Vegano</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-card reveal">
+      <div class="menu-card-img-wrap">
+        <img class="menu-card-img" src="https://www.inspiredtaste.net/wp-content/uploads/2024/07/French-Toast-Recipe-4.jpg" alt="French toast" />
+      </div>
+      <div class="menu-card-body">
+        <span class="menu-card-tag">Dulce</span>
+        <h3 class="menu-card-name">French toast</h3>
+        <p class="menu-card-desc">Brioche empapado en huevo y vainilla, con frutos rojos frescos, nata montada y sirope de arce.</p>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">8,50 €</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-card reveal">
+      <div class="menu-card-img-wrap">
+        <img class="menu-card-img" src="https://www.justspices.es/media/recipe/bowl-frutas-granola.jpg" alt="Bowl de granola" />
+      </div>
+      <div class="menu-card-body">
+        <span class="menu-card-tag">Dulce</span>
+        <h3 class="menu-card-name">Bowl de granola</h3>
+        <p class="menu-card-desc">Granola artesanal, yogur griego, frutas de temporada y miel. Ligero y nutritivo.</p>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">6,80 €</span>
+          <span class="badge-vegan">Vegano</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="items-list reveal" style="margin-top: 2.5rem; max-width: 700px;">
+    <div class="list-item">
+      <div>
+        <div class="list-item-name">Croissant de mantequilla</div>
+        <div class="list-item-desc">Horno propio · recién horneado cada mañana</div>
+      </div>
+      <span class="list-item-price">2,40 €</span>
+    </div>
+    <div class="list-item">
+      <div>
+        <div class="list-item-name">Tostada con tomate</div>
+        <div class="list-item-desc">Pan de hogaza · tomate rallado · AOVE · sal en escamas</div>
+      </div>
+      <span class="list-item-price">3,20 €</span>
+    </div>
+    <div class="list-item">
+      <div>
+        <div class="list-item-name">Zumo de naranja natural</div>
+        <div class="list-item-desc">Naranjas de Valencia · exprimido al momento</div>
+      </div>
+      <span class="list-item-price">3,80 €</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TARTAS ══ -->
+<section class="menu-section" data-section="tartas">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-eyebrow">Repostería</p>
+      <h2 class="section-title">Tartas <em>& dulces</em></h2>
+    </div>
+    <p class="section-note">Elaboración propia cada día. Consulta disponibilidad en pizarra.</p>
+  </div>
+  <div class="cards-grid">
+    <div class="menu-card reveal">
+      <div class="menu-card-img-wrap">
+        <img class="menu-card-img" src="https://www.justspices.es/media/recipe/bizcocho-zanahoria-sin-azucar.jpg" alt="Tarta zanahoria" />
+      </div>
+      <div class="menu-card-body">
+        <span class="menu-card-tag">Clásico</span>
+        <h3 class="menu-card-name">Tarta de zanahoria</h3>
+        <p class="menu-card-desc">Receta de la abuela Carmen. Frosting de queso crema, nueces tostadas y canela.</p>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">4,50 €</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-card reveal">
+      <span class="badge-new">Temporada</span>
+      <div class="menu-card-img-wrap">
+        <img class="menu-card-img" src="https://imag.bonviveur.com/tarta-de-limon-sin-horno.jpg" alt="Tarta de limón" />
+      </div>
+      <div class="menu-card-body">
+        <span class="menu-card-tag">Fruta</span>
+        <h3 class="menu-card-name">Tarta de limón</h3>
+        <p class="menu-card-desc">Base de galleta, crema de limón de Murcia y merengue italiano tostado.</p>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">4,80 €</span>
+        </div>
+      </div>
+    </div>
+    <div class="menu-card reveal">
+      <div class="menu-card-img-wrap">
+        <img class="menu-card-img" src="https://images.aws.nestle.recipes/original/2024_10_23T08_35_37_badun_images.badun.es_6641251d07e6_tarta_de_chocolate_a2b2.jpg" alt="Tarta de chocolate" />
+      </div>
+      <div class="menu-card-body">
+        <span class="menu-card-tag">Chocolate</span>
+        <h3 class="menu-card-name">Brownie fondant</h3>
+        <p class="menu-card-desc">Chocolate 70% Valrhona, nueces pecan y flor de sal. Templado, con helado de vainilla.</p>
+        <div class="menu-card-footer">
+          <span class="menu-card-price">5,20 €</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="items-list reveal" style="margin-top: 2.5rem; max-width: 700px;">
+    <div class="list-item">
+      <div>
+        <div class="list-item-name">Cookie de chocolate</div>
+        <div class="list-item-desc">Chocolate chip · mantequilla francesa · sal maldon</div>
+      </div>
+      <span class="list-item-price">2,20 €</span>
+    </div>
+    <div class="list-item">
+      <div>
+        <div class="list-item-name">Muffin de arándanos</div>
+        <div class="list-item-desc">Con streusel de almendra · sin lactosa disponible</div>
+      </div>
+      <span class="list-item-price">2,80 €</span>
+    </div>
+    <div class="list-item">
+      <div>
+        <div class="list-item-name">Pain au chocolat</div>
+        <div class="list-item-desc">Hojaldre casero · chocolate negro Valrhona</div>
+      </div>
+      <span class="list-item-price">3,00 €</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SALADO ══ -->
+<section class="menu-section" data-section="salado">
+  <div class="section-header reveal">
+    <div>
+      <p class="section-eyebrow">Salado · Todo el día</p>
+      <h2 class="section-title">Para <em>reponer fuerzas</em></h2>
+    </div>
+    <p class="section-note">Platos ligeros para acompañar tu lectura sin interrumpirla demasiado.</p>
+  </div>
+  <div class="split-layout">
+    <div>
+      <div class="items-list reveal">
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Bocadillo de jamón ibérico</div>
+            <div class="list-item-desc">Pan de hogaza · jamón ibérico de bellota · tomate · AOVE</div>
+          </div>
+          <span class="list-item-price">8,50 €</span>
+        </div>
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Quiche del día</div>
+            <div class="list-item-desc">Masa quebrada casera · relleno según pizarra · ensalada</div>
+          </div>
+          <span class="list-item-price">7,80 €</span>
+        </div>
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Tabla de quesos</div>
+            <div class="list-item-desc">Selección de 3 quesos artesanos · membrillo · nueces · pan</div>
+          </div>
+          <span class="list-item-price">12,00 €</span>
+        </div>
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Ensalada de temporada</div>
+            <div class="list-item-desc">Verduras de mercado · vinagreta de mostaza y miel</div>
+          </div>
+          <span class="list-item-price">8,00 €</span>
+        </div>
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Tostada de salmón ahumado</div>
+            <div class="list-item-desc">Pan de centeno · queso crema · alcaparras · eneldo fresco</div>
+          </div>
+          <span class="list-item-price">9,50 €</span>
+        </div>
+        <div class="list-item">
+          <div>
+            <div class="list-item-name">Hummus con crudités</div>
+            <div class="list-item-desc">Elaboración propia · zanahoria, pepino, apio · pimentón ahumado</div>
+          </div>
+          <span class="list-item-price">6,50 €</span>
+        </div>
+      </div>
+    </div>
+    <img class="split-image reveal" src="https://blog.supermercadosmas.com/wp-content/uploads/2020/01/HUMMUS-720.jpg" alt="Plato de comida" />
+  </div>
+</section>
+
+<!-- DESTACADOS -->
+<div class="destacados-banner">
+  <div class="destacado-item">
+    <p class="destacado-label">Café</p>
+    <p class="destacado-text">12 orígenes de especialidad</p>
+  </div>
+  <div class="destacado-item">   
+    <p class="destacado-label">Opciones</p>
+    <p class="destacado-text">Vegano & sin gluten</p>
+  </div>
+  <div class="destacado-item">
+    <p class="destacado-label">Repostería</p>
+    <p class="destacado-text">Elaboración propia diaria</p>
+  </div>
+  <div class="destacado-item">
+    <p class="destacado-label">Málaga </p>
+    <p class="destacado-text">Calle Inventada, Málaga</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand">Tu Rinconcito</div>
+      <p class="footer-tagline">Cafetería · Librería<br>Calle Inventada, Málaga<br>Lun–Dom · 9:00 – 21:00</p>
+    </div>
+    <div class="footer-col">
+      <h4>Visítanos</h4>
+      <ul>
+        <li><a href="#">Cómo llegar</a></li>
+        <li><a href="#">Reservar mesa</a></li>
+        <li><a href="#">Eventos privados</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Librería</h4>
+      <ul>
+        <li><a href="#">Catálogo</a></li>
+        <li><a href="#">Novedades</a></li>
+        <li><a href="#">Recomendaciones</a></li>
+        <li><a href="#">Encargos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Café</h4>
+      <ul>
+        <li><a href="carta.html">Nuestra carta</a></li>
+        <li><a href="#">Orígenes</a></li>
+        <li><a href="#">Cursos barista</a></li>
+        <li><a href="#">Café en grano</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Tu Rinconcito · Málaga</span>
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+
+    <div class="footer-portfolio-notice">
+    ⚠️ Página de prueba · Creada con fines de portfolio · El negocio y los datos mostrados son ficticios
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Librería — Tu Rinconcito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./iconoCafe.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+   
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav id="navbar">
+      <a href="index.html" class="nav-logo">Tu Rinconcito</a>
+      <ul class="nav-links">
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="carta.html">Carta</a></li>
+        <li><a href="libreria.html" class="active">Librería</a></li>
+        <li><a href="index.html#eventos">Eventos</a></li>
+        <li><a href="index.html#contacto" class="nav-cta">Reservar</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <div class="page-hero">
+      <div class="reveal">
+        <p class="page-hero-eyebrow">Librería · Madrid</p>
+        <h1 class="page-hero-title">Libros con<br /><em>criterio</em></h1>
+      </div>
+      <div class="reveal">
+        <p class="page-hero-desc">
+          Cada título ha pasado por nuestras manos antes de llegar a la
+          estantería. Literatura contemporánea, ensayo, poesía y cómic para
+          todos los lectores.
+        </p>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <div class="num">+4000</div>
+            <div class="lbl">títulos en catálogo</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="num">12</div>
+            <div class="lbl">géneros</div>
+          </div>
+          <div class="hero-meta-item">
+            <div class="num">Semanal</div>
+            <div class="lbl">nuevas llegadas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILTER BAR -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-subject="">Todos</button>
+      <button class="filter-btn" data-subject="fiction">Ficción</button>
+      <button class="filter-btn" data-subject="history">Historia</button>
+      <button class="filter-btn" data-subject="philosophy">Filosofía</button>
+      <button class="filter-btn" data-subject="science">Ciencia</button>
+      <button class="filter-btn" data-subject="poetry">Poesía</button>
+      <button class="filter-btn" data-subject="art">Arte</button>
+      <button class="refresh-btn" id="refreshBtn">
+        <svg
+          viewBox="0 0 16 16"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+        >
+          <path d="M13.5 8a5.5 5.5 0 1 1-1.1-3.3" stroke-linecap="round" />
+          <polyline
+            points="12 2 13.5 5 10.5 5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        Nuevos títulos
+      </button>
+    </div>
+
+    <!-- DESTACADO DEL DÍA -->
+    <section class="books-section" id="featuredSection">
+      <div class="section-header reveal">
+        <div>
+          <p class="section-eyebrow">Selección del día</p>
+          <h2 class="section-title">El libro que <em>recomendamos</em></h2>
+        </div>
+        <p class="section-note">
+          Cambia cada vez que recargas. Déjate sorprender.
+        </p>
+      </div>
+      <div id="featuredBook"></div>
+    </section>
+
+    <!-- CATÁLOGO -->
+    <section class="books-section" id="catalogSection">
+      <div class="section-header reveal">
+        <div>
+          <p class="section-eyebrow">Catálogo</p>
+          <h2 class="section-title">Descubre <em>nuevos mundos</em></h2>
+        </div>
+        <p class="section-note" id="catalogNote">
+          Cargando selección aleatoria...
+        </p>
+      </div>
+      <div class="books-grid" id="booksGrid"></div>
+    </section>
+
+    <!-- BANNER -->
+    <div class="destacados-banner">
+      <div class="destacado-item">
+        <span class="destacado-icon">📚</span>
+        <p class="destacado-label">Catálogo</p>
+        <p class="destacado-text">+4000 títulos</p>
+      </div>
+      <div class="destacado-item">
+        <span class="destacado-icon">✍️</span>
+        <p class="destacado-label">Encargos</p>
+        <p class="destacado-text">En 48 horas</p>
+      </div>
+      <div class="destacado-item">
+        <span class="destacado-icon">🎁</span>
+        <p class="destacado-label">Regalo</p>
+        <p class="destacado-text">Envuelto gratis</p>
+      </div>
+      <div class="destacado-item">
+        <span class="destacado-icon">☕</span>
+        <p class="destacado-label">Leer aquí</p>
+        <p class="destacado-text">Primera hora gratis</p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">Tu Rinconcito</div>
+          <p class="footer-tagline">
+            Cafetería · Librería<br />Calle Inventada, Málaga<br />Lun–Dom ·
+            9:00 – 21:00
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Visítanos</h4>
+          <ul>
+            <li><a href="#">Cómo llegar</a></li>
+            <li><a href="#">Reservar mesa</a></li>
+            <li><a href="#">Eventos privados</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Librería</h4>
+          <ul>
+            <li>
+              <a href="libreria.html" style="color: var(--cream)">Catálogo</a>
+            </li>
+            <li><a href="#">Novedades</a></li>
+            <li><a href="#">Recomendaciones</a></li>
+            <li><a href="#">Encargos</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Café</h4>
+          <ul>
+            <li><a href="carta.html">Nuestra carta</a></li>
+            <li><a href="#">Orígenes</a></li>
+            <li><a href="#">Cursos barista</a></li>
+            <li><a href="#">Café en grano</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Tu Rinconcito · Málaga</span>
+      </div>
+
+        <div class="footer-portfolio-notice">
+    ⚠️ Página de prueba · Creada con fines de portfolio · El negocio y los datos mostrados son ficticios
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal-backdrop" id="modalBackdrop">
+      <div class="modal" id="modal">
+        <div class="modal-header" id="modalHeader">
+          <button class="modal-close" id="modalClose">✕</button>
+          <div id="modalCover"></div>
+          <div class="modal-meta">
+            <p class="modal-genre" id="modalGenre"></p>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-author" id="modalAuthor"></p>
+            <p class="modal-year" id="modalYear"></p>
+          </div>
+        </div>
+        <div class="modal-body">
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-actions">
+            <a id="modalLink" href="#" target="_blank" class="btn-primary"
+              >Ver en Open Library →</a
+            >
+            <button class="btn-secondary" id="modalClose2">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
